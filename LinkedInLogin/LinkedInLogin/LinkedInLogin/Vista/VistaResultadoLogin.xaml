@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LinkedInLogin.Vista.VistaResultadoLogin"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand"
+                     Padding="0, 30, 0, 0"
+                     Spacing="15">
+            <Label FontSize="21"
+                   Text="Persona logueada"
+                   TextColor="LightGray"
+                   HorizontalOptions="CenterAndExpand"></Label>
+            
+            <Label FontSize="21"
+                   x:Name="lblNombreCompleto"
+                   TextColor="LightGray"
+                   HorizontalOptions="CenterAndExpand"></Label>
+
+            <Grid ColumnDefinitions="*,279,*" 
+                  RowDefinitions="*,160,350,*">
+
+                <Ellipse Grid.Row="1"
+                         Grid.Column="1"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         WidthRequest="168"
+                         HeightRequest="168"
+                         Stroke="#FFFF9900"
+                         StrokeThickness="4"
+                         Fill="White"/>
+                <Image Grid.Row="1"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       WidthRequest="150"
+                       HeightRequest="150" 
+                    x:Name="imgFoto">
+                    <Image.Clip>
+                        <EllipseGeometry Center="75,75"
+                                         RadiusX="75"
+                                         RadiusY="75"/>
+                    </Image.Clip>
+                </Image>
+            </Grid>
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
