@@ -11,8 +11,6 @@ namespace LinkedInLogin.VistaModelo
 {
     public class VistaModeloLogin : VistaModeloBase
     {
-        //string EmailLogged = 
-
         private Command _CmdLinkedInLogin;
         public Command CmdLinkedInLogin
         {
@@ -58,7 +56,8 @@ namespace LinkedInLogin.VistaModelo
                                     {
                                         UserDialogs.Instance.HideLoading();
 
-                                        await UserDialogs.Instance.AlertAsync(new AlertConfig { 
+                                        await UserDialogs.Instance.AlertAsync(new AlertConfig
+                                        {
                                             Message = "Error al obtener el email",
                                             OkText = "Ok",
                                             Title = "Dotnet conf 2020"
